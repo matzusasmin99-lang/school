@@ -99,6 +99,40 @@
   --sidebar-accent-foreground: 42 38% 95%;
 }
 
+:root {
+  --background: 0 0% 5%;
+  --foreground: 0 0% 96%;
+  --border: 0 0% 19%;
+  --input: 0 0% 19%;
+  --card: 0 0% 9%;
+  --card-foreground: 0 0% 96%;
+  --popover: 0 0% 9%;
+  --popover-foreground: 0 0% 96%;
+  --primary: 355 76% 53%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 17%;
+  --secondary-foreground: 0 0% 96%;
+  --muted: 0 0% 14%;
+  --muted-foreground: 0 0% 68%;
+  --accent: 355 76% 53%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 355 76% 45%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 355 76% 53%;
+  --chart-1: 355 76% 53%;
+  --chart-2: 0 0% 88%;
+  --chart-3: 0 0% 58%;
+  --chart-4: 355 48% 36%;
+  --chart-5: 0 0% 36%;
+  --sidebar: 0 0% 7%;
+  --sidebar-foreground: 0 0% 96%;
+  --sidebar-border: 0 0% 19%;
+  --sidebar-primary: 355 76% 53%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 0 0% 15%;
+  --sidebar-accent-foreground: 0 0% 96%;
+}
+
 @layer base {
   * { @apply border-border; }
   html { scroll-behavior: smooth; scroll-padding-top: 90px; }
@@ -107,7 +141,7 @@
   a { color: inherit; }
 }
 
-:root { --forest: #174b3b; --forest-deep: #103b31; --gold: #e3b64f; --paper: #f7f3e8; --coral: #c9785e; }
+:root { --forest: #f4f4f5; --forest-deep: #09090b; --gold: #ef3340; --paper: #09090b; --coral: #ef3340; }
 * { box-sizing: border-box; }
 .site-shell { overflow: hidden; background: var(--paper); }
 .container { width: min(1180px, calc(100% - 64px)); margin: 0 auto; }
