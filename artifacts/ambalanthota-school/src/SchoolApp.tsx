@@ -652,6 +652,7 @@ function SchoolApp() {
           <footer className="app-footer">
             <span>H/Ambalanthota National School</span>
             <span>Learning · Leadership · Community</span>
+            <span>Developer: Matheesha Sasmin</span>
           </footer>
         </main>
       </div>
