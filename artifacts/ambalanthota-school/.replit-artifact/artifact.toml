@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "H/Ambalanthota National School"
+description = "An English-language school website for H/Ambalanthota National School, with 3D-inspired motion and pages for school life, achievements, events, and contact information."
+version = "1.0.0"
+id = "artifacts/ambalanthota-school"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21881
+
+[services.development]
+run = "pnpm --filter @workspace/ambalanthota-school run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ambalanthota-school", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ambalanthota-school/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21881"
+BASE_PATH = "/"
