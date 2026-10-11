@@ -529,12 +529,15 @@ function SchoolApp() {
     <div className="school-app">
       <aside className="app-sidebar">
         <Link className="app-brand" href="/" aria-label="School home">
-          <span className="app-crest" aria-hidden="true">
-            H/A
-          </span>
+          <img
+            src="/school-logo.png"
+            alt="H/Ambalanthota National School Emblem"
+            className="app-crest-img"
+          />
           <span className="app-brand-name">
             H/Ambalanthota
             <small>National School</small>
+            <span className="app-motto">නොනැවතී ඉදිරියට</span>
           </span>
         </Link>
         <div className="sidebar-rule" />
@@ -589,6 +592,11 @@ function SchoolApp() {
             {menuOpen ? <X size={21} /> : <Menu size={21} />}
           </button>
           <div className="topbar-location">
+            <img
+              src="/school-logo.png"
+              alt="Logo"
+              className="topbar-logo-img"
+            />
             <span>H/Ambalanthota National School</span>
             <span aria-hidden="true">/</span>
             <strong>{activeSection?.title ?? 'School home'}</strong>
